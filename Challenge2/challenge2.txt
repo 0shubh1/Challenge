@@ -1,0 +1,104 @@
+I have used below command that retrieves information about the model view or the instance view of a virtual machine.
+
+https://management.azure.com/subscriptions/xxxxx-abcf-484c-be79-e3194xxxxxx/resourceGroups/tidevops/providers/Microsoft.Compute/virtualMachines/demo?api-version=2022-03-01
+
+
+Request Preview:
+
+GET https://management.azure.com/subscriptions/xxxxx-abcf-484c-be79-e3194xxxxxx/resourceGroups/tidevops/providers/Microsoft.Compute/virtualMachines/demo?api-version=2022-03-01
+Authorization: Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSIsImtpZCI6IjJaUXBKM1VwYmpBWVhZR2FYRUpsOGxWMFRPSSJ9.eyJhdWQiOiJodHRwczovL21hbmFnZW1lbnQuY29yZS53aW5kb3dzLm5ldCIsImlzcyI6Imh0dHBzOi8vc3RzLndpbmRvd3MubmV0Lzc5ZDY3NThkLTVhMDUtNGFkMC04OTA0LTY1NTJkM2ZkNjIzMC8iLCJpYXQiOjE2NTg4MTY4MjIsIm5iZiI6MTY1ODgxNjgyMiwiZXhwIjoxNjU4ODIxMzQ2LCJhY3IiOiIxIiwiYWlvIjoiQVRRQXkvOFRBQUFBZFZFWW9KMHo3dVhTYVhlaUJNNTczdHhpU29teWpqbUZuajJHNFc1MHJrK0dSUHZJWHE1VUtSV1NQTlk2clZydCIsImFtciI6WyJwd2QiXSwiYXBwaWQiOiIxOGZiY2ExNi0yMjI0LTQ1ZjYtODViMC1mN2JmMmIzOWIzZjMiLCJhcHBpZGFjciI6IjAiLCJmYW1pbHlfbmFtZSI6IlNldGhpIiwiZ2l2ZW5fbmFtZSI6IlNodWJoYW0iLCJncm91cHMiOlsiYzhmNWQ4YWUtOTU1NS00YzFmLWE1NDAtZjVkMDg5MGJkNjk0IiwiOTg2MDBlNzktMTRjNC00MGEzLWI4M2YtZDVhNmI4ZDIzZGRjIiwiMTAwMjU1NDAtYTJjYy00ZGQzLWJmYjktODZkMmNjM2I0MDhkIiwiZTA1OTQwOWYtZmZiYS00MmY5LWFmNWEtZTdjODEzMTlmN2FmIiwiMTRkZWExZGYtZTQ2MS00YjBjLWI2Y2YtYWE1ZTdlYjU5NDRmIiwiZjVlMzM0MjAtYjkxOC00YWI2LWE4MzMtZTAyN2M3NDM2ZThhIiwiOWQ4ODA2MmYtNTY1Ni00MjM3LThjNGYtNzFiMTZmZTZlZjY0IiwiMDJkMmE3MDEtZjZhZS00YWEzLThhZWMtN2E3NjdiOGFjOWE0IiwiZjVjN2ZiOWEtOWNhOS00NjJjLTllYmMtNDJlM2VhMDJkODc5IiwiNWJlOWY5ZmUtMTU3ZC00NGQ0LTg0YzktZGNhMDFjMzdiZWI3IiwiN2Q4NDE0YjAtNTMzOS00NTVlLTljYTUtM2E2MWQxZTc4M2UwIiwiMTg2ZmUwODgtZmNkZC00ODEzLTkxNGItNjkxZGRkMTM4NmY2IiwiYThlMGJhZWQtYTU3Mi00NjY1LThjZmEtYjVjOTUxM2I0ZTExIiwiMWI3MDlhZDQtYjJiMy00YzE1LTk5ZjYtYTdkZTFkNzA2ZTQ0IiwiZjhkMjA3MTEtOWZmMS00ZDQ0LWE5MjYtNDYwZmMzN2U1OGU4IiwiMTlhYWNkZDMtMDcxMS00NjRlLTg2MDQtOGE1OTgzNWY2MDMyIiwiZTk1ZDg2NzctMDBkMS00OGQ4LWEyNDEtY2Y4ZDI1MWFjODdiIiwiMmMzNDlkNDgtMGIwMS00YjZjLThjNzEtYzQ2YmY4OWI2ZDJiIiwiYmFiYTg2N2QtN2UzOS00YjFjLWI4NTktYWYxMjc5NzA0NjUwIiwiODQyNGU4MTMtZjc5My00NjM3LWJmZjAtMjQyNGY0MDVjOGQ5IiwiMDlhN2VhOWYtNDJjNy00NmYzLTg0Y2MtYTU4YjA5NGVmZWQwIl0sImlwYWRkciI6IjQ5LjM2LjE5Mi4xNDEiLCJuYW1lIjoiU2h1YmhhbSBTZXRoaSAoU0hTRVQuSU4pIiwib2lkIjoiMTQ1YTU5OWQtYTdmOS00MDA2LTg2MGMtMDAyZWZjOTQ1YmJmIiwicHVpZCI6IjEwMDMyMDAwN0VBQkY3OEEiLCJyaCI6IjAuQVFzQWpYWFdlUVZhMEVxSkJHVlMwXzFpTUVaSWYza0F1dGRQdWtQYXdmajJNQk1MQUFRLiIsInNjcCI6InVzZXJfaW1wZXJzb25hdGlvbiIsInN1YiI6Ik03MGo4WEsxWnBKZFU1UjBHQU5Ta24wakktWXVHOWl6OHJhOVY4Z0lLSTQiLCJ0aWQiOiI3OWQ2NzU4ZC01YTA1LTRhZDAtODkwNC02NTUyZDNmZDYyMzAiLCJ1bmlxdWVfbmFtZSI6IlNodWJoYW0uU2V0aGlAVG9JbmNyZWFzZS5vbm1pY3Jvc29mdC5jb20iLCJ1cG4iOiJTaHViaGFtLlNldGhpQFRvSW5jcmVhc2Uub25taWNyb3NvZnQuY29tIiwidXRpIjoidVlnaVc1MkM5MDZXbVJpUHNyTXJBQSIsInZlciI6IjEuMCIsIndpZHMiOlsiYzRlMzliZDktMTEwMC00NmQzLThjNjUtZmIxNjBkYTAwNzFmIiwiZmU5MzBiZTctNWU2Mi00N2RiLTkxYWYtOThjM2E0OWEzOGIxIiwiNjJlOTAzOTQtNjlmNS00MjM3LTkxOTAtMDEyMTc3MTQ1ZTEwIiwiYjc5ZmJmNGQtM2VmOS00Njg5LTgxNDMtNzZiMTk0ZTg1NTA5Il0sInhtc190Y2R0IjoxMzkzMjM1OTEzfQ.Mgad3TNaCPj1QQ0x5mfzxgUR9qWPKprLZe50Y2MxhVnztl1yqYPQzVsN7LrjZIY1NBikmdwb4H40gv6FxRv3BCPSfzM3fOGuWOaGcsMDmbJ5Zu254s0meuwxbHt8A1Tl_cuGJSwDnQPO-f6gP5cH_RoTr3h0u5IfSsCRCwQ3w6M_qGNVQO0W_4yVQNON_EJhfA0FFtzUdBRRj4issSMzPxiQt13fKX4F-8PtSPDKA2nD_OhF_PEWPDE8LLhmTPNZumsS9thqAWDUb8t3G6CWj2XhODLNpmchx9rkOLdGIu4xShRf74sWrneg8IejCJKgRcZ8iaNUfHN7YlsQKpBDWw
+
+Response Code: 200
+
+
+
+HEADERS
+
+HTTP
+cache-control: no-cache
+content-type: application/json; charset=utf-8
+date: Tue, 26 Jul 2022 06:42:58 GMT
+expires: -1
+pragma: no-cache
+server: Microsoft-HTTPAPI/2.0, Microsoft-HTTPAPI/2.0
+strict-transport-security: max-age=31536000; includeSubDomains
+x-ms-correlation-request-id: 81b757d9-491a-4d7d-bdd5-8829bddaf151
+x-ms-ratelimit-remaining-resource: Microsoft.Compute/LowCostGet3Min;3992,Microsoft.Compute/LowCostGet30Min;31989
+x-ms-ratelimit-remaining-subscription-reads: 11999
+x-ms-request-id: b4e8b899-842d-4c7e-8e72-6c24143c9321
+x-ms-routing-request-id: JIOINDIAWEST:20220726T064258Z:81b757d9-491a-4d7d-bdd5-8829bddaf151
+
+
+
+
+BODY
+
+JSON
+{
+  "name": "demo",
+  "id": "/subscriptions/xxxxx-abcf-484c-be79-e3194xxxxxx/resourceGroups/tidevops/providers/Microsoft.Compute/virtualMachines/demo",
+  "type": "Microsoft.Compute/virtualMachines",
+  "location": "westeurope",
+  "properties": {
+    "vmId": "15129592-db21-486e-9135-0a513fc66de4",
+    "hardwareProfile": {
+      "vmSize": "Standard_D2s_v3"
+    },
+    "storageProfile": {
+      "imageReference": {
+        "publisher": "MicrosoftWindowsServer",
+        "offer": "WindowsServer",
+        "sku": "2022-datacenter-azure-edition",
+        "version": "latest",
+        "exactVersion": "20348.825.220704"
+      },
+      "osDisk": {
+        "osType": "Windows",
+        "name": "demo_disk1_4fca70af9b3d4dd090b590302742d448",
+        "createOption": "FromImage",
+        "caching": "ReadWrite",
+        "managedDisk": {
+          "storageAccountType": "Premium_LRS",
+          "id": "/subscriptions/xxxxx-abcf-484c-be79-e3194xxxxxx/resourceGroups/tidevops/providers/Microsoft.Compute/disks/demo_disk1_4fca70af9b3d4dd090b590302742d448"
+        },
+        "deleteOption": "Delete",
+        "diskSizeGB": 127
+      },
+      "dataDisks": []
+    },
+    "osProfile": {
+      "computerName": "demo",
+      "adminUsername": "shubham.sethi",
+      "windowsConfiguration": {
+        "provisionVMAgent": true,
+        "enableAutomaticUpdates": true,
+        "patchSettings": {
+          "patchMode": "AutomaticByOS",
+          "assessmentMode": "ImageDefault",
+          "enableHotpatching": false
+        },
+        "enableVMAgentPlatformUpdates": false
+      },
+      "secrets": [],
+      "allowExtensionOperations": true,
+      "requireGuestProvisionSignal": true
+    },
+    "networkProfile": {
+      "networkInterfaces": [
+        {
+          "id": "/subscriptions/xxxxx-abcf-484c-be79-e3194xxxxxx/resourceGroups/tidevops/providers/Microsoft.Network/networkInterfaces/demo449",
+          "properties": {
+            "deleteOption": "Detach"
+          }
+        }
+      ]
+    },
+    "diagnosticsProfile": {
+      "bootDiagnostics": {
+        "enabled": true
+      }
+    },
+    "provisioningState": "Succeeded",
+    "timeCreated": "2022-07-26T06:40:27.1101487+00:00"
+  }
+}
