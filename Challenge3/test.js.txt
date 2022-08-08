@@ -4,20 +4,20 @@ var getIn = require('../index.js');
 console.log(getIn);
 
 var object = {
-    firstName: "John",
-    lastName: "Doe",
+    firstName: "shubham",
+    lastName: "sethi",
     address: {
         home: {
             addressLines: {
-                1: "Flat 304",
-                2: "Crockemwell road"
+                1: "H.NO 125",
+                2: "RESHAM GHAR COLONY"
             }
         }
     },
     customerType : {
         retail: {
-            channel: "Top100",
-            spending: "Top10",
+            channel: "ABC",
+            spending: "100",
         }
     }
 };
